@@ -19,7 +19,7 @@ Get the viewer and put it in your HTTP folder :
 ```bash
 curl -s https://raw.githubusercontent.com/wincelau/html-csv-viewer/master/viewer.min.html > viewer.html
 ```
-Call the viewer.html and put your CSV file in parameter preceding by #
+Call the viewer.html and put your CSV file path in the url as parameter preceding by #
 
 ```
 http://localhost/viewer.html#yourcsvfile.csv
