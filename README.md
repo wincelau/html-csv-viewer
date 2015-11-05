@@ -30,6 +30,6 @@ http://localhost/viewer.html#http://url/yourcsvfile.csv
 ## External ressources used :
 
 * Bootstrap (http://getbootstrap.com/)
-* Papaparse : CSV parser (https://github.com/mholt/PapaParse)
+* PapaParse : CSV parser (https://github.com/mholt/PapaParse)
 * Jquery DataTables : DataTables (http://www.datatables.net/)
 
