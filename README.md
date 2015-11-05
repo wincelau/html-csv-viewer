@@ -6,7 +6,7 @@ HTML Standalone CSV file viewer
 
 ### With the filename
 
-Get the viewer and put it in your CSV folder : 
+Get the viewer.html and put it in your CSV folder : 
 
 ```bash
 curl -s https://raw.githubusercontent.com/wincelau/html-csv-viewer/master/viewer.min.html > path_containing_your_csv_file/yourcsvfile.csv.html
@@ -14,7 +14,7 @@ curl -s https://raw.githubusercontent.com/wincelau/html-csv-viewer/master/viewer
 
 ### With parameter
 
-Get the viewer and put it in your HTTP folder :
+Get the viewer.html and put it in your HTTP folder :
 
 ```bash
 curl -s https://raw.githubusercontent.com/wincelau/html-csv-viewer/master/viewer.min.html > viewer.html
