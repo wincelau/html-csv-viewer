@@ -58,7 +58,10 @@
         <script type="text/javascript">
             $(document).on('ready', function() {
                 var showError = function(message) {
-                     hideLoading();
+                    hideLoading();
+                    if(!message || typeof message !== 'string' || !message instanceof String) {
+                        message = "Une erreur est survenue";
+                    }
                     $('#error').removeClass('hidden');
                     $('#error').html(message);
                 }
@@ -89,7 +92,7 @@
                     skipEmptyLines: true,
                     header: true,
                     error: function(err, file, inputElem, reason)
-                    {
+                    { 
                         showError(err);
                     },
                     complete: function(data)
@@ -123,7 +126,7 @@
                                 $('#csv-table_wrapper').prepend('<div class="panel-heading"></div>');
                                 $('#csv-table_wrapper .panel-heading').append($('#csv-table_wrapper #csv-table_length').detach());
                                 $('#csv-table_wrapper .panel-heading').append($('#csv-table_wrapper #csv-table_filter').detach());
-                                $('#csv-table_wrapper .panel-heading').append("<div class='col-sm-3 col-md-3 text-right text-muted dataTables_title'>producteurs.csv</div>");
+                                $('#csv-table_wrapper .panel-heading').append("<div class='col-sm-3 col-md-3 text-right text-muted dataTables_title'><a href='"+uriCsvFile+"' target='_blank'>"+uriCsvFile+"</a></div>");
                                 $('#csv-table_wrapper .panel-heading').append("<div class='clearfix'></div>");
                                 $('#csv-table_length').addClass('form-group row col-sm-3 col-md-1');
                                 $('#csv-table_length').html($('<div class="col-xs-12 row"></div>').append($('#csv-table_length select').detach()));
