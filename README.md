@@ -1,4 +1,4 @@
-# HTML CSV viewer
+# HTML CSV Viewer
 
 HTML Standalone CSV file viewer
 
