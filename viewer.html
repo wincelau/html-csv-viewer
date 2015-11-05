@@ -80,6 +80,8 @@
                     return;
                 }
 
+                document.title = uriCsvFile;
+
                 $('#loading').html("Loading csv file : " + uriCsvFile);
 
                 var data = Papa.parse(uriCsvFile, {
